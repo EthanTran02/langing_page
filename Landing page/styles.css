@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    padding: 8px 30px;
+    border-bottom: 1px solid black;
+    z-index: 9;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 16px;
+    left: 30px;
+}
+
+a:hover {
+    color: rgb(137, 137, 137);
+}
+
+#header-img {
+    width: 30%;
+}
+
+#nav-link {
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+section {
+    padding: 0 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 12px;
+}
+
+#email {
+    width: 300px;
+    height: 32px;
+}
+
+#submit {
+    width: 200px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: rgb(232, 232, 86);
+}
+
+#submit:hover {
+    background-color: rgb(160, 159, 159);
+}
+
+
+
+#features {
+    margin-top: 80px;
+}
+
+.flex-feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    margin: 16 auto;
+}
+
+
+.rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin-right: 4cap;
+}
+
+
+
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#pricing-grid {
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr ;
+    gap: 30px;
+}
+
+
+.pricing {
+    border: 1px solid rgb(126, 126, 12);
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 16px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.price-title {
+    background-color: gray;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#pricing-grid p {
+    margin: 12px;
+}
+
+.button {
+    margin-top: 32px;
+    display: flex;
+    background-color: yellow;
+    padding: 8px 12px;
+    width: 80px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 24px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    #pricing-grid {
+        grid-template: 1fr 1fr 1fr / 1fr;
+        gap: 12px;
+    }
+    .pricing {
+        margin: 0;
+        padding: 0;
+    }
+    .pricing:first-child {
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+}
